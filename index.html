@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leroy Pinckney | The Pinckney Team Careers in Greenville, SC</title>
+    <meta name="description" content="Join Leroy Pinckney at The Pinckney Team in Greenville, SC. Elevate your financial advising and life insurance career with elite mentorship, top payouts, and robust support.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (2026 Standards via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        secondary: '#d97706', // Amber 600
+                        accent: '#fef3c7', // Amber 50
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD Schema Markup (LocalBusiness, Organization, WebSite, FAQPage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://hudnallcapital.com/#website",
+          "url": "https://hudnallcapital.com",
+          "name": "The Pinckney Team - Careers",
+          "description": "Financial Advisor Careers in Greenville, SC"
+        },
+        {
+          "@type": "FinancialService",
+          "@id": "https://hudnallcapital.com/#organization",
+          "name": "The Pinckney Team",
+          "founder": {
+            "@type": "Person",
+            "name": "Leroy Pinckney",
+            "jobTitle": "Financial Advisor & Managing Director"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Main Street, Suite 400",
+            "addressLocality": "Greenville",
+            "addressRegion": "SC",
+            "postalCode": "29601",
+            "addressCountry": "US"
+          },
+          "telephone": "+1-864-555-0199",
+          "areaServed": "Greenville, South Carolina",
+          "description": "We offer elite career opportunities for financial advisors and life insurance professionals."
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What support does The Pinckney Team provide to new financial advisors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We provide comprehensive mentorship, a robust marketing stack, back-office administrative support, and direct access to Leroy Pinckney's proven wealth management frameworks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need an existing book of business to join the team in Greenville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While an existing book of business is advantageous and qualifies for accelerated transition bonuses, we also onboard highly driven professionals looking to pivot into the financial sector."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* Smooth transitions for SPA page changes */
+        .fade-in { animation: fadeIn 0.4s ease-in-out forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        /* Hide sections by default for JS routing */
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <header class="bg-primary text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center cursor-pointer" onclick="navigate('home')" role="button" tabindex="0" aria-label="Go to Homepage">
+                    <svg class="h-10 w-auto text-secondary mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="font-serif font-bold text-xl tracking-tight leading-tight">The Pinckney</span>
+                        <span class="text-xs text-slate-400 tracking-widest uppercase">Team</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <button onclick="navigate('home')" class="nav-btn text-sm font-medium hover:text-secondary transition-colors" data-target="home">Home</button>
+                    
+                    <!-- Careers Dropdown Menu -->
+                    <div class="relative group h-full flex items-center">
+                        <button onclick="navigate('careers')" class="nav-btn text-sm font-medium flex items-center hover:text-secondary transition-colors" data-target="careers">
+                            Careers <i class="fas fa-chevron-down ml-1.5 text-[10px] opacity-70"></i>
+                        </button>
+                        <!-- Invisible bridge to prevent hover gap -->
+                        <div class="absolute top-full left-0 w-full h-4"></div>
+                        <!-- Dropdown Content -->
+                        <div class="absolute left-0 top-[calc(100%+0.5rem)] w-56 bg-white rounded-md shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-slate-100">
+                            <button onclick="navigate('careers')" class="block w-full text-left px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-secondary transition-colors">Careers Overview</button>
+                            <button onclick="navigate('hudnall')" class="block w-full text-left px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-secondary transition-colors">About Hudnall Capital</button>
+                        </div>
+                    </div>
+
+                    <button onclick="navigate('about')" class="nav-btn text-sm font-medium hover:text-secondary transition-colors" data-target="about">Leroy Pinckney</button>
+
+                    <button onclick="navigate('contact')" class="bg-secondary hover:bg-amber-500 text-white px-5 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md">Join Our Team</button>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-secondary focus:outline-none" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <button onclick="navigate('home'); closeMobileMenu()" class="block w-full text-left px-3 py-2 text-base font-medium text-white hover:bg-slate-700 rounded-md">Home</button>
+                
+                <!-- Mobile Careers Submenu -->
+                <div class="bg-slate-800/50 rounded-md pb-1 mb-1">
+                    <button onclick="navigate('careers'); closeMobileMenu()" class="block w-full text-left px-3 py-2 text-base font-medium text-white hover:bg-slate-700 rounded-md">Careers Overview</button>
+                    <button onclick="navigate('hudnall'); closeMobileMenu()" class="block w-full text-left px-6 py-2 text-sm font-medium text-slate-300 hover:bg-slate-700 rounded-md flex items-center">
+                        <i class="fas fa-level-up-alt rotate-90 mr-3 text-xs opacity-50"></i> About Hudnall Capital
+                    </button>
+                </div>
+
+                <button onclick="navigate('about'); closeMobileMenu()" class="block w-full text-left px-3 py-2 text-base font-medium text-white hover:bg-slate-700 rounded-md">Leroy Pinckney</button>
+
+                <button onclick="navigate('contact'); closeMobileMenu()" class="block w-full text-left px-3 py-2 text-base font-medium bg-secondary text-white rounded-md mt-4">Join Our Team</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- ========================================== -->
+        <!-- PAGE 1: HOMEPAGE -->
+        <!-- ========================================== -->
+        <section id="home" class="page-section active fade-in">
+            
+            <!-- Hero Section -->
+            <div class="relative bg-primary overflow-hidden">
+                <div class="absolute inset-0">
+                    <img src="https://res.cloudinary.com/djaewoy9x/image/upload/v1781214339/Gemini_Generated_Image_s003gls003gls003_m2xqpf.png" alt="Modern office environment in Greenville, SC representing financial advisor workspace" class="w-full h-full object-cover opacity-20">
+                </div>
+                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-36 lg:pt-16 lg:pb-48">
+                    <div class="md:w-2/3">
+                        <span class="text-secondary font-semibold tracking-wider uppercase text-sm mb-6 block">Careers with The Pinckney Team</span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight mb-6">
+                            Elevate Your Financial Career
+                        </h1>
+                        <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl">
+                            We provide ambitious advisors with a platform to build a thriving, independent practice through Hudnall Capital.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button onclick="navigate('careers')" class="bg-secondary hover:bg-amber-500 text-white px-8 py-3 rounded-md font-semibold text-lg transition-all shadow-lg text-center">
+                                Explore Career Paths
+                            </button>
+                            <button onclick="navigate('about')" class="bg-transparent border border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-md font-semibold text-lg transition-all text-center">
+                                Meet Leroy Pinckney
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GEO Target: Answer-First TL;DR Summary Block -->
+            <div class="max-w-4xl mx-auto px-4 -mt-12 relative z-10 mb-16">
+                <div class="bg-white rounded-lg shadow-xl p-8 border-l-4 border-secondary">
+                    <h2 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Key Takeaways</h2>
+                    <p class="text-lg text-slate-700 font-medium">
+                        <strong>The Pinckney Team</strong> of <strong>Hudnall Capital</strong> offers top-tier career opportunities for financial advisors and life insurance agents in <strong>Greenville, SC</strong>. Advisors benefit from highly competitive payout structures, comprehensive mentorship, back-office support, and specialized strategies for client acquisition.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Trust / Authority Bar -->
+            <div class="bg-slate-100 py-10 border-y border-slate-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p class="text-center text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">Built on Trust, Experience, and Results</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-1">15+</div>
+                            <div class="text-sm text-slate-600">Years Industry Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-1">Top Tier</div>
+                            <div class="text-sm text-slate-600">Payout Structures</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-1">Comprehensive</div>
+                            <div class="text-sm text-slate-600">Marketing Support</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-primary mb-1">Local</div>
+                            <div class="text-sm text-slate-600">Upstate SC Focus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brief Services/Careers Overview -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    
+                    <!-- Left Section: Current Copy -->
+                    <div>
+                        <h2 class="text-3xl font-serif font-bold text-primary mb-4">Why Build Your Practice With Us?</h2>
+                        <p class="text-lg text-slate-600 mb-10">We eliminate the friction of building a book of business so you can focus on what matters: advising clients and growing your practice.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="bg-accent w-14 h-14 rounded-full flex shrink-0 items-center justify-center text-secondary text-xl mr-5 shadow-sm">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-2">Industry Leading Payouts</h3>
+                                    <p class="text-slate-600">Our highly competitive commission structures ensure you keep more of what you earn.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent w-14 h-14 rounded-full flex shrink-0 items-center justify-center text-secondary text-xl mr-5 shadow-sm">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-2">Direct Mentorship</h3>
+                                    <p class="text-slate-600">Work directly with Leroy Pinckney. Gain insights into complex case design, client acquisition, and practice management.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-accent w-14 h-14 rounded-full flex shrink-0 items-center justify-center text-secondary text-xl mr-5 shadow-sm">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-primary mb-2">Turnkey Independence</h3>
+                                    <p class="text-slate-600">Direct access to the tools & products best suited for your clients.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10">
+                            <button onclick="navigate('careers')" class="bg-primary hover:bg-slate-800 text-white px-8 py-3 rounded-md font-semibold transition-all shadow-md flex items-center group">
+                                View Career Opportunities 
+                                <i class="fas fa-arrow-right ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Section: How Are We Different -->
+                    <div class="bg-primary p-10 md:p-12 rounded-2xl shadow-2xl relative overflow-hidden">
+                        <!-- Decorative background element -->
+                        <div class="absolute top-0 right-0 -mr-8 -mt-8 w-40 h-40 rounded-full bg-secondary opacity-20 blur-3xl"></div>
+                        
+                        <h2 class="text-3xl font-serif font-bold text-white mb-6 relative z-10">How Are We Different?</h2>
+                        
+                        <div class="space-y-6 text-slate-300 relative z-10">
+                            <p class="text-lg leading-relaxed">
+                                Leroy recognized early on that the financial industry often leaves new advisors to fend for themselves, creating an unnecessary barrier for talented professionals.
+                            </p>
+                            <div class="border-l-4 border-secondary pl-5 py-3 my-6 bg-white/5 rounded-r-md">
+                                <p class="text-xl font-serif font-bold text-white leading-snug">
+                                    The Pinckney Team was structured specifically to change that paradigm.
+                                </p>
+                            </div>
+                            <p class="text-lg leading-relaxed">
+                                We replace isolation with collaboration. By providing robust mentorship, structured training, and back-office support, we ensure you have a powerful team behind you while maintaining the true freedom of an independent practice.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Partnership / Hudnall Capital Section -->
+            <div class="bg-slate-200/50 py-16 border-t border-slate-200">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <img src="https://res.cloudinary.com/djaewoy9x/image/upload/v1781282027/copy_of_hudnall-logo_xjvlwd.webp" alt="Hudnall Capital Advisors Logo" class="h-[116px] md:h-[144px] mx-auto mb-8 object-contain drop-shadow-sm">
+                    <h2 class="text-3xl font-serif font-bold text-primary mb-4">Backed by Hudnall Capital</h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        The Pinckney Team proudly operates as a specialized division of <strong>Hudnall Capital</strong>. This powerful partnership empowers our advisors by combining hands-on, localized mentorship with the elite resources, open-architecture technology, and institutional backing of a premier financial firm.
+                    </p>
+                    
+                    <div class="mb-10">
+                        <button onclick="navigate('hudnall')" class="bg-primary hover:bg-slate-800 text-white px-8 py-3 rounded-md font-semibold transition-all shadow-md flex items-center mx-auto group">
+                            Discover the Hudnall Advantage 
+                            <i class="fas fa-arrow-right ml-3 transform group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+
+                    <div class="inline-block border-t-2 border-secondary w-16 rounded-full"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PAGE 2: ABOUT / LEROY PINCKNEY -->
+        <!-- ========================================== -->
+        <section id="about" class="page-section fade-in py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Bio Section -->
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div>
+                        <img src="https://res.cloudinary.com/djaewoy9x/image/upload/v1781213163/369248265_2440488576118739_1356846335493364749_n_1_xqwml2.jpg" alt="Professional portrait of Leroy Pinckney, Managing Director of The Pinckney Team" class="rounded-xl shadow-2xl object-cover h-[400px] max-w-sm mx-auto md:ml-auto w-full mt-2">
+                    </div>
+                    
+                    <div>
+                        <h2 class="text-4xl font-serif font-bold text-primary mb-6">Who is Leroy Pinckney?</h2>
+                        <div class="prose prose-lg text-slate-600">
+                            <p class="mb-4">
+                                Leroy Pinckney is a dedicated family man, proud father, and newlywed whose life is defined by leadership and mentorship. Drawing from a championship-winning sports background, he brings a high-performance, team-first mentality to the financial sector. With over 15 years of industry experience, Leroy leverages his coaching expertise to lead a highly effective advisor team.
+                            </p>
+                            <p class="mb-4">
+                                Beyond serving his clients, Leroy's true passion lies in <strong>agency building and mentorship</strong>. He recognized early on that the financial industry often leaves new advisors to fend for themselves. The Pinckney Team was structured to change that paradigm.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commitment Section (Moved Below) -->
+                <div class="mt-16 bg-white p-10 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="text-3xl font-serif font-bold text-primary mb-8 text-center">My Commitment to Your Success</h3>
+                    <div class="grid md:grid-cols-3 gap-8 mb-10">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary text-2xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Experience You Can Leverage</h4>
+                                <p class="text-slate-600 text-sm">Access to decades of proven case studies and market cycle experience.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary text-2xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Authoritative Positioning</h4>
+                                <p class="text-slate-600 text-sm">We help you build your brand locally in the Upstate SC market.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary text-2xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Trust & Transparency</h4>
+                                <p class="text-slate-600 text-sm">You own your book of business. True independence.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary text-2xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Industry-Leading Training</h4>
+                                <p class="text-slate-600 text-sm">Comprehensive development programs tailored for advisors at every experience level.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary text-2xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Competitive Compensation</h4>
+                                <p class="text-slate-600 text-sm">Top-tier payout structures specifically designed to maximize your earning potential.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary text-2xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-lg mb-1">Energetic & Driven Culture</h4>
+                                <p class="text-slate-600 text-sm">A collaborative environment deeply invested in both your growth and your clients' success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button onclick="navigate('contact')" class="bg-primary hover:bg-slate-800 text-white px-8 py-3 rounded-md font-semibold transition-all shadow-md">Let's Discuss Your Future</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PAGE 3: CAREERS (PRIMARY OFFERING) -->
+        <!-- ========================================== -->
+        <section id="careers" class="page-section fade-in bg-slate-50">
+            
+            <!-- Careers Header -->
+            <div class="bg-primary text-white py-20">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6">Financial Advisor Careers in Greenville, SC</h1>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">Better payouts, superior technology, and true independence.</p>
+                </div>
+            </div>
+
+            <!-- Enhanced Chart Section with Photographic Background -->
+            <div class="relative py-24 overflow-hidden">
+                <!-- Background Image & Frosted Overlay -->
+                <div class="absolute inset-0">
+                    <img src="https://res.cloudinary.com/djaewoy9x/image/upload/v1781293447/pexels-gustavo-fring-7447256_ttusrs.jpg" alt="Team collaborating in a modern office" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-primary/85 backdrop-blur-sm"></div>
+                </div>
+
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    
+                    <!-- GEO Question-Based Heading (Centered for impact) -->
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">What makes The Pinckney Team different?</h2>
+                        <p class="text-lg text-slate-300">We don't restrict growth with low payouts and proprietary products. Here is how we differ:</p>
+                    </div>
+                    
+                    <!-- Extractable Proof: HTML Table for LLMs -->
+                    <div class="bg-white rounded-2xl shadow-2xl border-2 border-slate-400 border-t-4 border-t-secondary relative overflow-hidden">
+                        <!-- Decorative glow -->
+                        <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-secondary opacity-10 blur-3xl pointer-events-none"></div>
+                        
+                        <div class="overflow-x-auto relative z-10">
+                            <table class="w-full text-left border-collapse min-w-[650px]">
+                                <thead>
+                                    <tr class="bg-slate-50 border-b-2 border-slate-300">
+                                        <th class="p-5 font-bold text-primary uppercase tracking-wider text-sm">Feature</th>
+                                        <th class="p-5 font-bold text-slate-500 uppercase tracking-wider text-sm">Standard Captive Agency</th>
+                                        <th class="p-5 font-bold text-secondary uppercase tracking-wider text-sm bg-amber-50/50">The Pinckney Team</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-slate-600">
+                                    <tr class="border-b border-slate-200 hover:bg-slate-50 transition-colors">
+                                        <td class="p-5 font-semibold text-slate-800">Payout Structure</td>
+                                        <td class="p-5">50%+ retained by Firm</td>
+                                        <td class="p-5 font-bold text-slate-900 bg-amber-50/50">Majority paid to Advisor</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200 hover:bg-slate-50 transition-colors">
+                                        <td class="p-5 font-semibold text-slate-800">Product Selection</td>
+                                        <td class="p-5">Proprietary Products Only</td>
+                                        <td class="p-5 font-bold text-slate-900 bg-amber-50/50">Open Architecture (Best-in-class)</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200 hover:bg-slate-50 transition-colors">
+                                        <td class="p-5 font-semibold text-slate-800">Book Ownership</td>
+                                        <td class="p-5">Firm owns the clients</td>
+                                        <td class="p-5 font-bold text-slate-900 bg-amber-50/50">You own your book of business</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200 hover:bg-slate-50 transition-colors">
+                                        <td class="p-5 font-semibold text-slate-800">Mentorship</td>
+                                        <td class="p-5">Corporate training modules</td>
+                                        <td class="p-5 font-bold text-slate-900 bg-amber-50/50">Direct 1-on-1 with Leroy Pinckney</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50 transition-colors">
+                                        <td class="p-5 font-semibold text-slate-800">Culture</td>
+                                        <td class="p-5">Dated "fit the mold" environment</td>
+                                        <td class="p-5 font-bold text-slate-900 bg-amber-50/50">Modern team of peers & mentors cultivating growth</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transition & Training Stipend Banner -->
+            <div class="bg-slate-900 border-y border-secondary/30 relative overflow-hidden shadow-inner">
+                <!-- Premium glowing background effects -->
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-secondary opacity-10 blur-3xl pointer-events-none"></div>
+                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-slate-700 opacity-20 blur-3xl pointer-events-none"></div>
+                
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 relative z-10">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                        <div class="md:w-2/3">
+                            <div class="inline-flex items-center space-x-2 bg-secondary/10 text-secondary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 border border-secondary/20 shadow-sm">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>StartUp Program</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6 leading-tight">Transition & Training Stipends</h3>
+                            <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+                                We understand, your new path requires absolute focus. To eliminate financial friction, The Pinckney Team offers <strong class="text-white font-semibold">transition and training stipends</strong> to all incoming advisors. 
+                            </p>
+                            <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mt-4">
+                                We invest heavily in your success from day one, ensuring you have the financial stability needed to focus entirely on mastering your craft.
+                            </p>
+                        </div>
+                        <div class="md:w-1/3 flex justify-center md:justify-end">
+                            <!-- Visual interest element: Ring & Icon -->
+                            <div class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-slate-800 bg-slate-800/40 flex items-center justify-center shadow-[0_0_50px_rgba(217,119,6,0.15)] relative group">
+                                 <!-- Rotating dashed border for premium tech feel -->
+                                 <div class="absolute inset-0 rounded-full border-2 border-dashed border-secondary/40 animate-[spin_15s_linear_infinite]"></div>
+                                 <i class="fas fa-hand-holding-usd text-6xl md:text-7xl text-secondary drop-shadow-lg transform group-hover:scale-110 transition-transform duration-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combined Career Paths Section with Photographic Background -->
+            <div class="relative py-24 overflow-hidden">
+                <!-- Background Image & Frosted Overlay -->
+                <div class="absolute inset-0">
+                    <img src="https://res.cloudinary.com/djaewoy9x/image/upload/v1781295106/pexels-kampus-8353820_wu4ntu.jpg" alt="Professionals reviewing financial strategies" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-primary/85 backdrop-blur-sm"></div>
+                </div>
+
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+                    
+                    <!-- New Advisor Launchpad Section -->
+                    <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden relative">
+                        <!-- Accent Border Line -->
+                        <div class="absolute top-0 left-0 w-2 h-full bg-secondary"></div>
+                        
+                        <div class="p-10 md:p-12 lg:flex lg:items-center lg:justify-between gap-12">
+                            <div class="lg:w-1/2 mb-10 lg:mb-0">
+                                <div class="inline-flex items-center space-x-2 bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-slate-200">
+                                    <i class="fas fa-seedling text-emerald-600"></i>
+                                    <span>New to the Industry</span>
+                                </div>
+                                <h3 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">Launch Your Career with Confidence</h3>
+                                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                                    Breaking into financial advising can be daunting without the right foundation. At The Pinckney Team, we don't believe in the outdated "sink or swim" corporate mentality. We provide an immersive, hands-on development program designed to accelerate the growth of driven professionals.
+                                </p>
+                                <p class="text-lg text-slate-600 leading-relaxed">
+                                    Under the direct mentorship of Leroy Pinckney, you will learn the nuances of finding clients, plan design, and practice management—bypassing years of trial and error with a true team of peers supporting your ascent.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2">
+                                <div class="bg-slate-50 rounded-xl p-8 border border-slate-100 shadow-inner">
+                                    <h4 class="font-bold text-primary text-xl mb-6">The Launchpad Advantage</h4>
+                                    <ul class="space-y-6">
+                                        <li class="flex items-start">
+                                            <div class="bg-white w-10 h-10 rounded-full flex shrink-0 items-center justify-center text-secondary shadow-sm mr-4 mt-0.5 border border-slate-100">
+                                                <i class="fas fa-bullseye"></i>
+                                            </div>
+                                            <div>
+                                                <span class="font-bold text-slate-800 block text-lg">Structured Mentorship</span>
+                                                <span class="text-slate-600 text-sm leading-snug mt-1 block">Shadow experienced advisors, receive 1-on-1 coaching, and collaborate on real client cases.</span>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="bg-white w-10 h-10 rounded-full flex shrink-0 items-center justify-center text-secondary shadow-sm mr-4 mt-0.5 border border-slate-100">
+                                                <i class="fas fa-book-open"></i>
+                                            </div>
+                                            <div>
+                                                <span class="font-bold text-slate-800 block text-lg">Licensing & Education</span>
+                                                <span class="text-slate-600 text-sm leading-snug mt-1 block">Clear, guided pathways to help you secure your required securities and life/health licenses efficiently.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experienced Advisor Transition Section -->
+                    <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden relative">
+                        <!-- Accent Border Line (Right side to alternate layout) -->
+                        <div class="absolute top-0 right-0 w-2 h-full bg-primary"></div>
+                        
+                        <div class="p-10 md:p-12 lg:flex lg:items-center lg:justify-between lg:flex-row-reverse gap-12">
+                            <div class="lg:w-1/2 mb-10 lg:mb-0">
+                                <div class="inline-flex items-center space-x-2 bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 border border-slate-200">
+                                    <i class="fas fa-exchange-alt text-blue-600"></i>
+                                    <span>Experienced Advisors</span>
+                                </div>
+                                <h3 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">Transition Your Practice Seamlessly</h3>
+                                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                                    Moving your book of business shouldn't stall your momentum. We focus on maximizing your revenue through superior <strong class="text-slate-800">financial modeling</strong>, proving exactly how much more you can earn on our platform without charging your clients more.
+                                </p>
+                                <p class="text-lg text-slate-600 leading-relaxed">
+                                    Our large, dedicated back-office team handles the entire implementation process—from compliance to repapering—ensuring a completely seamless transition for you and your clients.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2">
+                                <div class="bg-slate-50 rounded-xl p-8 border border-slate-100 shadow-inner">
+                                    <h4 class="font-bold text-primary text-xl mb-6">The Transition Process</h4>
+                                    <ul class="space-y-6">
+                                        <li class="flex items-start">
+                                            <div class="bg-white w-10 h-10 rounded-full flex shrink-0 items-center justify-center text-primary shadow-sm mr-4 mt-0.5 border border-slate-100">
+                                                <i class="fas fa-chart-line"></i>
+                                            </div>
+                                            <div>
+                                                <span class="font-bold text-slate-800 block text-lg">Financial Modeling</span>
+                                                <span class="text-slate-600 text-sm leading-snug mt-1 block">We map out your current production to demonstrate the immediate, tangible revenue increase our payout structure provides.</span>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="bg-white w-10 h-10 rounded-full flex shrink-0 items-center justify-center text-primary shadow-sm mr-4 mt-0.5 border border-slate-100">
+                                                <i class="fas fa-shield-alt"></i>
+                                            </div>
+                                            <div>
+                                                <span class="font-bold text-slate-800 block text-lg">Compliance Review</span>
+                                                <span class="text-slate-600 text-sm leading-snug mt-1 block">Careful, confidential legal reviews to guarantee a fully compliant and protected transition of your book.</span>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <div class="bg-white w-10 h-10 rounded-full flex shrink-0 items-center justify-center text-primary shadow-sm mr-4 mt-0.5 border border-slate-100">
+                                                <i class="fas fa-cogs"></i>
+                                            </div>
+                                            <div>
+                                                <span class="font-bold text-slate-800 block text-lg">Seamless Implementation</span>
+                                                <span class="text-slate-600 text-sm leading-snug mt-1 block">Our back-office experts manage onboarding, licensing, and tech integration so you never miss a beat serving your clients.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                
+                <!-- Roles We Are Filling -->
+                <div class="max-w-3xl mx-auto mb-16">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-secondary">
+                        <h3 class="text-2xl font-bold text-primary mb-4 text-center md:text-left">Roles We Are Filling</h3>
+                        <ul class="space-y-4 text-slate-600">
+                            <li class="flex flex-col">
+                                <span class="font-bold text-slate-800">1. Wealth Management Advisors</span>
+                                <span>Focus on holistic financial planning, retirement strategies, and AUM growth.</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <span class="font-bold text-slate-800">2. Life Insurance Specialists</span>
+                                <span>Focus on advanced estate planning, key-person insurance, and annuities.</span>
+                            </li>
+                            <li class="flex flex-col">
+                                <span class="font-bold text-slate-800">3. Hybrid Professionals</span>
+                                <span>Professionals licensed in both securities and insurance looking to offer comprehensive services.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button onclick="navigate('contact')" class="bg-secondary hover:bg-amber-500 text-white px-10 py-4 rounded-md font-bold text-xl transition-all shadow-lg shadow-amber-500/30">Apply for a Career Today</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PAGE 4: ABOUT HUDNALL CAPITAL (SUBPAGE) -->
+        <!-- ========================================== -->
+        <section id="hudnall" class="page-section fade-in bg-slate-50 pb-20">
+            <!-- Header -->
+            <div class="bg-slate-900 py-20 mb-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <img src="https://res.cloudinary.com/djaewoy9x/image/upload/v1781281779/hudnall-logo_xjvlwd.webp" alt="Hudnall Capital Advisors Logo" class="h-[115px] md:h-[144px] object-contain mx-auto mb-8 drop-shadow-md">
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">About Hudnall Capital Advisors</h1>
+                    <p class="text-xl text-slate-400 max-w-3xl mx-auto">The institutional foundation empowering our independent advisors.</p>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Intro & Partnership -->
+                <div class="bg-white p-10 md:p-12 rounded-2xl shadow-sm border border-slate-200 mb-12">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="text-3xl font-serif font-bold text-primary mb-6">Lead. With. Love.</h2>
+                            <p class="text-lg text-slate-600 mb-4 leading-relaxed">
+                                <strong class="text-slate-800">"Lead. With. Love."</strong> is the foundational motto and guiding philosophy of Hudnall Capital Advisors. As a proud division of the firm, <strong>The Pinckney Team</strong> embodies this ethos every day.
+                            </p>
+                            <p class="text-lg text-slate-600 leading-relaxed">
+                                Under the leadership of <strong class="text-slate-800">Ry Hudnall</strong>, Hudnall Capital was built to redefine financial management through integrity and simplicity. Ry's vision ensures that advisors have the tools to deliver high-level concierge service, while operating in a collaborative culture that larger firms simply cannot replicate.
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 p-8 rounded-xl border-l-4 border-secondary">
+                            <h3 class="text-xl font-bold text-primary mb-6">Firm Overview for Recruits</h3>
+                            <ul class="space-y-5">
+                                <li class="flex items-start">
+                                    <i class="fas fa-handshake text-secondary mt-1 mr-4 text-lg"></i>
+                                    <div>
+                                        <span class="font-bold text-slate-800 block mb-1">True Partnership Model</span>
+                                        <span class="text-slate-600 text-sm">We foster a collaborative environment where your expertise is relied upon, not just valued.</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-bullseye text-secondary mt-1 mr-4 text-lg"></i>
+                                    <div>
+                                        <span class="font-bold text-slate-800 block mb-1">Your Vision, Our Support</span>
+                                        <span class="text-slate-600 text-sm">We provide the comprehensive resources necessary to bring your professional aspirations to life.</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-users text-secondary mt-1 mr-4 text-lg"></i>
+                                    <div>
+                                        <span class="font-bold text-slate-800 block mb-1">A "Family" Culture</span>
+                                        <span class="text-slate-600 text-sm">More than just colleagues—we cultivate a culture of deep trust, support, and camaraderie.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services & Careers Highlights -->
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                        <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center text-secondary text-2xl mb-6 shadow-sm">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Concierge Client Services</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Hudnall Capital's approach to wealth management is personalized and highly attentive. We empower our advisors to go beyond expectations, helping to ensure each client's financial goals are met with precision, care, and an unmatched level of service.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                        <div class="w-14 h-14 bg-accent rounded-full flex items-center justify-center text-secondary text-2xl mb-6 shadow-sm">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Elite Career Advantages</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Your career deserves the same dedication we provide our clients. We offer highly competitive compensation packages that accurately reflect your value and contribution to the firm's growth, ensuring you keep more of what you earn.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="https://www.hudcapadvisors.com/" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-slate-800 text-white px-8 py-3 rounded-md font-semibold transition-all shadow-md flex items-center group">
+                        Visit Hudnall Capital's Website
+                        <i class="fas fa-external-link-alt ml-3 text-sm opacity-80 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <button onclick="navigate('careers')" class="text-secondary hover:text-amber-600 font-semibold transition-colors flex items-center group px-4 py-3">
+                        <i class="fas fa-arrow-left mr-2 transform group-hover:-translate-x-1 transition-transform"></i>
+                        Return to Careers Overview
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PAGE 5: CONTACT & FAQs -->
+        <!-- ========================================== -->
+        <section id="contact" class="page-section fade-in py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-serif font-bold text-primary">Take the Next Step</h2>
+                    <p class="mt-4 text-lg text-slate-600">Career opportunities in Greenville SC with The Pinckney Team & Hudnall Capital</p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-16">
+                    
+                    <!-- Information Column (Left Side) -->
+                    <div class="space-y-12">
+                        <!-- Local SEO: NAP (Name, Address, Phone) -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-6">Contact Information</h3>
+                            <div class="bg-slate-900 text-white p-8 rounded-xl shadow-lg">
+                                <div class="space-y-6">
+                                    <h4 class="font-serif font-bold text-xl text-secondary">The Pinckney Team</h4>
+                                    
+                                    <p class="flex items-start">
+                                        <i class="fas fa-map-marker-alt mt-1.5 mr-4 text-slate-400 w-5"></i>
+                                        <span>
+                                            <strong>Location</strong><br>
+                                            Upstate SC
+                                        </span>
+                                    </p>
+                                    <p class="flex items-center">
+                                        <i class="fas fa-phone-alt mr-4 text-slate-400 w-5"></i>
+                                        <a href="tel:+18645550199" class="hover:text-secondary transition-colors">+1 (864) 555-0199</a>
+                                    </p>
+                                    <p class="flex items-center">
+                                        <i class="fab fa-linkedin mr-4 text-slate-400 text-lg w-5"></i>
+                                        <a href="https://www.linkedin.com/in/leroy-pinckney-11623239/" target="_blank" rel="noopener noreferrer" class="hover:text-secondary transition-colors">Connect on LinkedIn</a>
+                                    </p>
+                                    
+                                    <!-- Embedded Career Opportunities List -->
+                                    <div class="border-t border-slate-800 mt-6 pt-6 space-y-4">
+                                        <h5 class="text-base font-bold text-secondary uppercase tracking-wider">Career Opportunities</h5>
+                                        <ul class="space-y-3.5 text-base text-slate-300">
+                                            <li class="flex items-center">
+                                                <i class="fas fa-chevron-right text-secondary text-xs mr-4 w-5 text-center"></i> 
+                                                <span>Financial Advisor</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fas fa-chevron-right text-secondary text-xs mr-4 w-5 text-center"></i> 
+                                                <span>Insurance Advisor</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fas fa-chevron-right text-secondary text-xs mr-4 w-5 text-center"></i> 
+                                                <span>Wealth Manager</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <i class="fas fa-chevron-right text-secondary text-xs mr-4 w-5 text-center"></i> 
+                                                <span>Financial Planner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Netlify Contact Form (Right Side) -->
+                    <div class="bg-primary p-10 md:p-12 rounded-2xl shadow-2xl border-t-4 border-secondary relative overflow-hidden h-fit">
+                        <!-- Decorative glow -->
+                        <div class="absolute top-0 right-0 -mr-8 -mt-8 w-48 h-48 rounded-full bg-secondary opacity-20 blur-3xl pointer-events-none"></div>
+                        
+                        <h3 class="text-2xl font-serif font-bold text-white mb-6 relative z-10">Let's Discuss Your Career</h3>
+                        
+                        <!-- Form Tagged for Netlify with Honeypot Anti-Spam -->
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5 relative z-10" id="contact-form" onsubmit="handleFormSubmit(event)">
+                            <!-- Netlify Hidden Inputs -->
+                            <input type="hidden" name="form-name" value="contact" />
+                            <div class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-slate-300 mb-2">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required class="w-full bg-white border-0 rounded-md px-4 py-3 text-slate-900 shadow-inner placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-secondary transition-all">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-slate-300 mb-2">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required class="w-full bg-white border-0 rounded-md px-4 py-3 text-slate-900 shadow-inner placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-secondary transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full bg-white border-0 rounded-md px-4 py-3 text-slate-900 shadow-inner placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-secondary transition-all">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full bg-white border-0 rounded-md px-4 py-3 text-slate-900 shadow-inner placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-secondary transition-all">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full bg-white border-0 rounded-md px-4 py-3 text-slate-900 shadow-inner placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-secondary transition-all resize-none"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-secondary hover:bg-amber-500 text-white font-bold py-4 px-6 rounded-md transition-all shadow-lg hover:shadow-amber-500/30 flex items-center justify-center group mt-4">
+                                Request a Call
+                                <i class="fas fa-arrow-right ml-3 text-sm opacity-80 group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                            
+                            <!-- Success Message Placeholder -->
+                            <div id="form-success" class="hidden mt-4 p-4 bg-emerald-500/10 text-emerald-400 rounded-md border border-emerald-500/20 flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-emerald-400"></i>
+                                <p class="text-sm font-medium">Thank you. Your confidential message has been sent to Leroy Pinckney.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Frequently Asked Questions (Repositioned Below) -->
+                <div class="mt-24 border-t border-slate-200 pt-16">
+                    <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">Frequently Asked Questions</h3>
+                    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-150">
+                            <h4 class="font-bold text-slate-800 mb-3 text-lg">What support does The Pinckney Team provide to new financial advisors?</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">We provide comprehensive mentorship, a robust marketing stack, back-office administrative support, and direct access to Leroy Pinckney's proven wealth management frameworks.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-150">
+                            <h4 class="font-bold text-slate-800 mb-3 text-lg">Do I need an existing book of business to join the team in Greenville?</h4>
+                            <p class="text-slate-600 text-sm leading-relaxed">While an existing book of business is advantageous and qualifies for accelerated transition bonuses, we also onboard highly driven professionals looking to pivot into the financial sector.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex flex-col mb-4">
+                        <span class="font-serif font-bold text-xl text-white tracking-tight">The Pinckney</span>
+                        <span class="text-xs text-secondary tracking-widest uppercase">Team</span>
+                    </div>
+                    <p class="text-sm">Elevating financial advising careers and wealth management in Greenville, South Carolina under the leadership of Leroy Pinckney.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><button onclick="navigate('home')" class="hover:text-secondary transition-colors">Home</button></li>
+                        <li><button onclick="navigate('about')" class="hover:text-secondary transition-colors">Leroy Pinckney</button></li>
+                        <li><button onclick="navigate('careers')" class="hover:text-secondary transition-colors">Careers</button></li>
+                        <li><button onclick="navigate('contact')" class="hover:text-secondary transition-colors">Contact Us</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Location</h4>
+                    <p class="text-sm mb-2">Upstate SC</p>
+                    <p class="text-sm mb-4">Phone: <a href="tel:+18645550199" class="hover:text-white transition-colors">(864) 555-0199</a></p>
+                    <a href="https://www.linkedin.com/in/leroy-pinckney-11623239/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-lg mr-2"></i> Leroy Pinckney
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 The Pinckney Team. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Not an offer to buy or sell securities. Subject to background checks.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // SPA Navigation Logic
+        function navigate(pageId) {
+            // Hide all sections
+            document.querySelectorAll('.page-section').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Show target section
+            const target = document.getElementById(pageId);
+            if (target) {
+                target.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Update active state on desktop nav. 
+            // If the subpage 'hudnall' is active, keep the parent 'careers' tab highlighted.
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                if(btn.dataset.target === pageId || (pageId === 'hudnall' && btn.dataset.target === 'careers')) {
+                    btn.classList.add('text-secondary');
+                    btn.classList.remove('text-white');
+                } else {
+                    btn.classList.remove('text-secondary');
+                    btn.classList.add('text-white');
+                }
+            });
+
+            // Update URL hash for standard web navigation behavior
+            window.location.hash = pageId;
+        }
+
+        // Handle initial load based on URL hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                navigate(hash);
+            } else {
+                navigate('home');
+            }
+        });
+
+        // Handle browser back/forward buttons
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                navigate(hash);
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        // Simulated Form Submission for Canvas Environment 
+        // (In production on Netlify, standard action processes automatically)
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent page reload in this SPA environment
+            
+            // Show simulated success message
+            const successMsg = document.getElementById('form-success');
+            const form = document.getElementById('contact-form');
+            
+            successMsg.classList.remove('hidden');
+            form.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
